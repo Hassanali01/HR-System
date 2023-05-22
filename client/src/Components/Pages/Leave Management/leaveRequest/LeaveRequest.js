@@ -391,9 +391,10 @@ const LeaveRequest = () => {
                                         required                   
                                         onChange={(e)=>{setbackupresourse(e.target.value)}}
                                       > 
-                                       
+                                        <option disabled  selected hidden defaultValue={""}>Please Select</option>
                                         {
                                           array.map((d,i)=>{
+                                           
                                            return(
                                             <>
                                                   
